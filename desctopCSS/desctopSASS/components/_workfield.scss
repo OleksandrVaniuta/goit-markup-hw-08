@@ -1,0 +1,40 @@
+.section--padding-top {
+	padding-top: 56px;
+}
+.workfield {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+.workfield__item {
+	width: 370px;
+	height: 294px;
+	position: relative;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+.workfield__descr {
+	display: block;
+	position: absolute;
+	text-align: center;
+	justify-content: center;
+	height: 70px;
+	width: 370px;
+	left: 0;
+	padding-top: 27px;
+	padding-bottom: 27px;
+
+	background-color: rgba(47, 48, 58, 0.8);
+	bottom: 0px;
+}
+.workfield__text {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $mainWhite;
+}
