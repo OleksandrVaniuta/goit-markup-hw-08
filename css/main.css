@@ -122,7 +122,6 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
   background-color: #ffffff;
   justify-content: center;
   z-index: 999;
@@ -152,11 +151,118 @@ ul {
 }
 
 .mobile-menu {
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-  background-color: #212121;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: transparent;
   max-width: 480px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: 302px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  color: #212121;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover, .nav__link:focus {
+  color: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .nav__link {
+    font-size: 40px;
+    line-height: 1.17;
+  }
+}
+
+.nav__link--current {
+  position: relative;
+  color: #2196f3;
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__link {
+  color: #757575;
+  fill: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover, .contacts__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .contacts__link {
+    font-size: 34px;
+    line-height: 1.17;
+  }
+}
+
+.mabile-menu__networks {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu__networks-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-menu__networks-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-menu__link {
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #757575;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
 }
 
 .hero {
