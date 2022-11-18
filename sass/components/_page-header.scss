@@ -4,6 +4,11 @@
 .container--position {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding-top: 16px;
+	@media screen and (max-width: 767px) {
+		justify-content: space-between;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	padding-top: 21px;
+	padding-bottom: 21px;
 }

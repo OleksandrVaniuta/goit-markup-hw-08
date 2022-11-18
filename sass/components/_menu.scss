@@ -46,21 +46,48 @@
 .mobile-menu {
 	// margin-top: 46px;
 	margin: 0 auto;
-	padding-left: 40px;
+	padding-left: 20px;
 	padding-top: 48px;
 	padding-bottom: 48px;
 	background-color: transparent;
 	max-width: 480px;
-	// max-width: 480px;
-	// z-index: 5;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@media screen and (min-width: 480px) {
+		padding-left: 40px;
+	}
+}
+.container__nav {
+	display: flex;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	margin-left: 88px;
+	@media screen and (min-width: 1200px) {
+		margin-left: 93px;
+	}
 }
 .nav {
-	@media screen and (max-width: 767px) {
-		margin-bottom: 302px;
+	@media screen and (min-width: 767px) and (max-width: 1199px) {
+		margin-right: 96px;
+	}
+	@media screen and (min-width: 768px) {
+		align-items: center;
+	}
+}
+.nav__list {
+	padding: 0;
+	margin: 0;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
 	}
 }
 .nav__item {
-	@media screen and (max-width: 767px) {
+	@media screen and (min-width: 768px) {
+		display: block;
 	}
 }
 .nav__item:not(:last-child) {
@@ -68,16 +95,11 @@
 		margin-bottom: 32px;
 	}
 }
-.nav__list {
-	padding: 0;
-	margin: 0;
-}
 .nav__link {
 	color: $titleTextColor;
 	font-weight: 500;
 	letter-spacing: 0.02em;
 	text-decoration: none;
-
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,10 +122,14 @@
 	padding: 0;
 	@media screen and (max-width: 767px) {
 		margin-bottom: 64px;
+		bottom: 100px;
 	}
 }
 .contacts__item:not(:last-child) {
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 480px) {
+		margin-bottom: 24px;
+	}
+	@media screen and (min-width: 480px) and (max-width: 767px) {
 		margin-bottom: 32px;
 	}
 }
@@ -111,8 +137,8 @@
 	color: $primaryTextColor;
 	fill: $primaryTextColor;
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
+	// font-size: 24px;
+	// line-height: 1.17;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 
@@ -125,10 +151,12 @@
 		color: $acentColor;
 		fill: $acentColor;
 	}
-
 	@media screen and (max-width: 767px) {
-		font-size: 34px;
+		font-size: 24px;
 		line-height: 1.17;
+	}
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		font-size: 34px;
 	}
 }
 .mabile-menu__networks {
@@ -148,11 +176,13 @@
 .mobile-menu__link {
 	font-family: $primaryFontFamily;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: 500;
-	line-height: 22px;
+	line-height: 1.22;
 	color: $primaryTextColor;
-
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		font-size: 18px;
+	}
 	&:hover,
 	&:focus {
 		color: $acentColor;
