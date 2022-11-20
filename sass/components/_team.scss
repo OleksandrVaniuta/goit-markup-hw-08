@@ -13,7 +13,8 @@
 }
 .team__item {
 	background-color: $mainWhite;
-	@media screen and (min-width: 480px) and (max-width: 767px) {
+	max-width: 450px;
+	@media screen and (min-width: 480px) {
 		width: 450px;
 	}
 	@media screen and (min-width: 768px) {

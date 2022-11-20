@@ -1,27 +1,53 @@
 .hero {
 	margin: 0 auto;
-
-	height: 400px;
 	padding-top: 118px;
 	padding-bottom: 118px;
 	text-align: center;
 	justify-content: center;
 	background-color: $heroBackground;
 
-	@media screen and (min-width: 480px) {
-		height: 400px;
-		padding-top: 118px;
-		padding-bottom: 118px;
+	@media screen and (max-width: 480px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/Hero_mob1x.jpg");
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/Hero_mob2x.jpg");
+			background-size: cover;
+		}
 	}
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 481px) and (max-width: 768px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/Hero_tab1x.jpg");
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/Hero_tab2x.jpg");
+			background-size: cover;
+		}
+	}
+	@media screen and (min-width: 769px) {
 		max-width: 1600px;
-		padding-top: 200px;
-		padding-bottom: 210px;
+		padding: 200px 0;
 		background-color: $heroBackground;
-		// background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero.jpg");
-		// background-position: center;
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/Hero_desk1x.jpg");
+		background-position: center;
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/Hero_desk2x.jpg");
+			background-size: cover;
+		}
 	}
 }
+
 .hero__title {
 	margin-top: 0;
 	margin-bottom: 30px;
