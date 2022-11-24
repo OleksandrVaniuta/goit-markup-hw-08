@@ -63,6 +63,9 @@
 	line-height: 1.17em;
 	color: $titleTextColor;
 	text-align: center;
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
 }
 
 .preference__iconbox {

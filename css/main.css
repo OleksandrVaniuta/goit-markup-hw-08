@@ -82,8 +82,6 @@ ul {
 @media screen and (max-width: 767px) {
   .container--position {
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -183,7 +181,7 @@ ul {
 }
 
 .logo__container {
-  padding: 26px 0;
+  padding: 16px 0;
 }
 
 .container__nav {
@@ -484,6 +482,7 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border: none;
   border-radius: 4px;
   border-color: transparent;
 }
@@ -841,6 +840,11 @@ ul {
   line-height: 1.17em;
   color: #212121;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .preference__title {
+    text-align: left;
+  }
 }
 
 .preference__iconbox {
@@ -1336,10 +1340,15 @@ ul {
 
 .filters__list {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .filters__list {
+    width: 480px;
+  }
 }
 
 .button--color {
